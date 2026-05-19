@@ -8,8 +8,12 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-define('SMTP_USER', getenv('SMTP_USER') ?: 'your@gmail.com');
-define('SMTP_PASS', getenv('SMTP_PASS') ?: '');
+define('SMTP_HOST',     'smtp.gmail.com');
+define('SMTP_PORT',     587);
+define('SMTP_USER',     getenv('SMTP_USER') ?: 'S11231474@student.usp.ac.fj');
+define('SMTP_PASS',     getenv('SMTP_PASS') ?: '');
+define('SMTP_FROM',     getenv('SMTP_FROM') ?: 'S11231474@student.usp.ac.fj');
+define('SMTP_FROM_NAME','IS351 Security Lab');
 
 
 /**
